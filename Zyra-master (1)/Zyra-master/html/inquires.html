@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/contact.css">
+    <script src="../js/layout.js" type="module"></script>
+    <title>Zyra</title>
+  </head>
+
+  <body>
+      <!-- Inquiries and Appointments Section -->
+      <section id="contact">
+
+        <!-- contact and address & working hours -->
+        <div class="contact-and-address"> 
+          
+          <!-- Contact Information -->
+          <div class="info">
+
+            <div class="contact-info">
+              <h2>Contact Us</h2>
+              <p><strong>Phone:</strong> +234 XXX XXX XXXX</p>
+              <p><strong>Email:</strong> info@zyrafashionhouse.com</p>
+            </div>
+
+            <!-- Physical Address  -->
+            <div class="address">
+              <h2>Physical Address</h2>
+              <p>
+                Zyra Fashion House Boutique<br>
+                Suite 5, Style Plaza<br>
+                24 Runway Crescent<br>
+                Maitama, Abuja<br>
+                Federal Capital Territory, Nigeria
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <!-- Opening Hours -->
+          <div class="opening-hours">
+            <div>
+              <h3>Opening Hours</h3>
+              <ul>
+                <li>Monday – Friday: 9:00 AM – 7:00 PM</li>
+                <li>Saturday: 10:00 AM – 6:00 PM</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-forms">
+          <!-- Appointment Booking Form -->
+          <div class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form>
+                <p><label for="client-name">Full Name:</label></p>
+                <input type="text" id="client-name" name="client-name" required><br><br>
+
+                <p><label for="phone">Phone Number:</label></p>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <p><label for="date">Preferred Date:</label></p>
+                <input type="date" id="date" name="date"><br><br>
+
+                <p><label for="time">Preferred Time:</label></p>
+                <input type="time" id="time" name="time"><br><br>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+          </div>
+
+            <!-- Inquiry Form -->
+            <div class="inquiry-form">
+              <h2>Send an Inquiry</h2>
+
+              <form>
+                <p><label for="name">Full Name:</label></p>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <p><label for="email">Email Address:</label></p>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <p><label for="message">Your Inquiry:</label><br></p>
+                <textarea id="message" name="message" rows="5"></textarea><br>
+
+                <button type="submit">Submit</button>
+              </form>        
+            </div>
+        </div>
+      </section>
+
+  </body>
+</html>

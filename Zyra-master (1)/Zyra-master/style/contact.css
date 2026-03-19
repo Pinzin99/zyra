@@ -1,0 +1,49 @@
+
+.contact-and-address {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: rgb(231, 230, 230);
+}
+.info {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.opening-hours, h3 {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    height: 25px;
+    width: 400px;
+    border: solid, rgb(194, 193, 193), 1px;
+}
+
+textarea {
+    height: 170px;
+    width: 500px;
+    border: solid, rgb(194, 193, 193), 1px
+}
+
+.all-forms {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
+.all-forms button {
+    padding: 15px 30px 15px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 100;
+}

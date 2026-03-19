@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <script src="/js/layout.js" type="module"></script>
+    <title>Zyra</title>
+  </head>
+  <body>
+    <div
+      class="product-grid"
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 30px;
+        margin: 5% auto;
+        width: 80dvw;
+        max-width: 1000px;
+      "
+    ></div>
+
+    <script type="module">
+      import Product from "../js/data.js";
+      const productGrid = document.querySelector(".product-grid");
+      Product.forEach((product) => {
+        const productCard = document.createElement("zyra-product-card");
+        productCard.setAttribute("img", product.image);
+        productCard.setAttribute("name", product.name);
+        productCard.setAttribute("slug", product.slug);
+        productCard.setAttribute("type", product.type);
+        productCard.setAttribute("price", product.price);
+        productCard.setAttribute("currency", product.currency);
+        productCard.setAttribute("quantity", product.quantity);
+
+        productGrid.append(productCard);
+      });
+    </script>
+  </body>
+</html>
